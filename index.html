@@ -37,6 +37,8 @@
           <option value="suncare">Suncare</option>
           <option value="fragrance">Fragrance</option>
         </select>
+        <input id="productSearch" type="search" placeholder="Search products…" />
+        <button id="rtlToggle" type="button">RTL</button>
       </div>
 
       <!-- Products Grid -->
@@ -46,6 +48,7 @@
       <div class="selected-products">
         <h2>Selected Products</h2>
         <div id="selectedProductsList"></div>
+        <button id="clearAll" type="button">Clear All</button>
         <button id="generateRoutine" class="generate-btn">
           <i class="fa-solid fa-wand-magic-sparkles"></i> Generate Routine
         </button>
@@ -85,8 +88,6 @@
       </footer>
     </div>
 
-    <!-- secrets.js can be removed when using Cloudflare Workers for API requests -->
-    <script src="secrets.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
